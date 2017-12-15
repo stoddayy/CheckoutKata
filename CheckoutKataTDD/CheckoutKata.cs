@@ -19,7 +19,7 @@ namespace CheckoutKataTDD {
         }
 
         public void RemoveItemFromBasket(int item){
-            
+            basketList.RemoveAt(item);
         }
 
 
