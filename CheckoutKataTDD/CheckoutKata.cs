@@ -23,6 +23,7 @@ namespace CheckoutKataTDD {
                 throw new IndexOutOfRangeException();
             }
             basketList.RemoveAt(item);
+
         }
 
 

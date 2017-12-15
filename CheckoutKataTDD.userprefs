@@ -1,12 +1,11 @@
-﻿<Properties StartupConfiguration="{EE174C52-5751-4A21-9801-DC78A6233B05}|Default">
+﻿<Properties StartupConfiguration="{C0B0795B-6991-48EE-85EF-CC0623ED342F}|Unit Tests">
   <MonoDevelop.Ide.ItemProperties.CheckoutKataTDD PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="CheckoutKataTDD.Tests/UnitTest1.cs">
     <Files>
       <File FileName="CheckoutKataTDD/Program.cs" Line="16" Column="8" />
-      <File FileName="CheckoutKataTDD.Tests/UnitTest1.cs" Line="72" Column="47" />
+      <File FileName="CheckoutKataTDD.Tests/UnitTest1.cs" Line="66" Column="43" />
       <File FileName="CheckoutKataTDD/CheckoutKata.cs" Line="25" Column="39" />
       <File FileName="CheckoutKataTDD/Item.cs" Line="7" Column="16" />
-      <File FileName="CheckoutKataTDD Status" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
@@ -16,8 +15,6 @@
               <Node name="CheckoutKataTDD" expanded="True">
                 <Node name="Tests" expanded="True">
                   <Node name="UnitTest1" expanded="True">
-                    <Node name="BasketStoresItems" selected="True" />
-                    <Node name="CanRemoveItemFromBasket" selected="True" />
                     <Node name="CheckoutReturnsValue" selected="True" />
                   </Node>
                 </Node>
@@ -29,6 +26,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.CheckoutKataTDD.Tests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
