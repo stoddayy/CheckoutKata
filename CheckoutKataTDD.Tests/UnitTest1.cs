@@ -24,6 +24,7 @@ namespace CheckoutKataTDD.Tests {
         //5. basket can calculate price on checkout (Without rules) -> X
         //6. Can calculate basket with rules where all items are the same
         //7. basket can calculate price on checkout with pricing rules
+        //8. basket can calculate price on checkout with pricing rules but more items than rules allow for i.e rule says 3 for 120 and you put 4 in
 
         public UnitTest1(){
             helper = new CheckoutKata();
@@ -119,6 +120,145 @@ namespace CheckoutKataTDD.Tests {
             int basketPrice = helper.CheckoutBasket();
 
             Assert.Equal(120, basketPrice);
+        }
+
+
+        [Fact]
+        public void CanCalculateBasketPriceAllRules() {
+            Item item1 = new Item {
+                id = 1,
+                name = "A",
+                price = 50
+            };
+            PricingRules rules = new PricingRules {
+                quantity = 3,
+                price = 120
+            };
+
+            item1.rules = rules;
+
+
+            Item item2 = new Item {
+                id = 2,
+                name = "B",
+                price = 30
+            };
+            PricingRules rules2 = new PricingRules {
+                quantity = 2,
+                price = 45
+            };
+
+            item2.rules = rules2;
+
+
+            helper.AddItemToBasket(item1);
+            helper.AddItemToBasket(item1);
+            helper.AddItemToBasket(item1);
+
+            helper.AddItemToBasket(item2);
+            helper.AddItemToBasket(item2);
+
+            int basketPrice = helper.CheckoutBasket();
+
+            Assert.Equal(165, basketPrice);
+        }
+
+        [Fact]
+        public void CanCalculateBasketPriceAllRulesButDiffMultiplesOfItems() {
+            Item item1 = new Item {
+                id = 1,
+                name = "A",
+                price = 50
+            };
+            PricingRules rules = new PricingRules {
+                quantity = 3,
+                price = 120
+            };
+
+            item1.rules = rules;
+
+
+            Item item2 = new Item {
+                id = 2,
+                name = "B",
+                price = 30
+            };
+            PricingRules rules2 = new PricingRules {
+                quantity = 2,
+                price = 45
+            };
+
+            item2.rules = rules2;
+
+
+            Item item3 = new Item {
+                id = 3,
+                name = "C",
+                price = 20
+            };
+
+            helper.AddItemToBasket(item1);
+            helper.AddItemToBasket(item1);
+            helper.AddItemToBasket(item1);
+            helper.AddItemToBasket(item1);
+
+            helper.AddItemToBasket(item2);
+            helper.AddItemToBasket(item2);
+
+            helper.AddItemToBasket(item3);
+
+            int basketPrice = helper.CheckoutBasket();
+
+            Assert.Equal(235, basketPrice);
+        }
+
+        [Fact]
+        public void CanCalculateBasketWhereItemsDontHaveEnoughToHitRules(){
+            Item item1 = new Item {
+                id = 1,
+                name = "A",
+                price = 50
+            };
+            PricingRules rules = new PricingRules {
+                quantity = 3,
+                price = 120
+            };
+
+            item1.rules = rules;
+
+
+            Item item2 = new Item {
+                id = 2,
+                name = "B",
+                price = 30
+            };
+            PricingRules rules2 = new PricingRules {
+                quantity = 2,
+                price = 45
+            };
+
+            item2.rules = rules2;
+
+
+            Item item3 = new Item {
+                id = 3,
+                name = "C",
+                price = 20
+            };
+
+
+            helper.AddItemToBasket(item1);
+            helper.AddItemToBasket(item1);
+
+            helper.AddItemToBasket(item2);
+
+            helper.AddItemToBasket(item3);
+            helper.AddItemToBasket(item3);
+            helper.AddItemToBasket(item3);
+
+            int basketPrice = helper.CheckoutBasket();
+
+            Assert.Equal(190, basketPrice);
         }
     }
 }

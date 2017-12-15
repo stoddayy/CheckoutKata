@@ -60,7 +60,18 @@ namespace CheckoutKataTDD {
             if(itemsOfSameType.Count() % matchedItem.rules.quantity == 0){
                 int multiplier = (itemsOfSameType.Count() / matchedItem.rules.quantity);
                 price = matchedItem.rules.price * multiplier;
-            } 
+            } else if (itemsOfSameType.Count() / matchedItem.rules.quantity > 0){
+                int remainder = itemsOfSameType.Count() % matchedItem.rules.quantity;
+
+                int x = itemsOfSameType.Count() - remainder;
+
+                int multiplier = (x / matchedItem.rules.quantity);
+
+                price = matchedItem.rules.price * multiplier;
+                price += (remainder * matchedItem.price);
+            } else {
+                price = itemsOfSameType.Count() * matchedItem.price;
+            }
 
             return price;
         }
