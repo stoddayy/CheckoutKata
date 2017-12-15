@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{C0B0795B-6991-48EE-85EF-CC0623ED342F}|Unit Tests">
   <MonoDevelop.Ide.ItemProperties.CheckoutKataTDD PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CheckoutKataTDD.Tests/UnitTest1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CheckoutKataTDD Status">
     <Files>
-      <File FileName="CheckoutKataTDD/Program.cs" Line="16" Column="8" />
-      <File FileName="CheckoutKataTDD.Tests/UnitTest1.cs" Line="66" Column="43" />
-      <File FileName="CheckoutKataTDD/CheckoutKata.cs" Line="25" Column="39" />
-      <File FileName="CheckoutKataTDD/Item.cs" Line="7" Column="16" />
+      <File FileName="CheckoutKataTDD/Program.cs" Line="5" Column="20" />
+      <File FileName="CheckoutKataTDD.Tests/UnitTest1.cs" Line="103" Column="24" />
+      <File FileName="CheckoutKataTDD/CheckoutKata.cs" Line="63" Column="15" />
+      <File FileName="CheckoutKataTDD/Item.cs" Line="10" Column="1" />
+      <File FileName="CheckoutKataTDD/PricingRules.cs" Line="10" Column="10" />
+      <File FileName="CheckoutKataTDD Status" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
@@ -15,7 +17,7 @@
               <Node name="CheckoutKataTDD" expanded="True">
                 <Node name="Tests" expanded="True">
                   <Node name="UnitTest1" expanded="True">
-                    <Node name="CheckoutReturnsValue" selected="True" />
+                    <Node name="CanCalculateBasketPriceWithSameItemsAndRules" selected="True" />
                   </Node>
                 </Node>
               </Node>

@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKataTDD", "Checkout
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKataTDD.Tests", "CheckoutKataTDD.Tests\CheckoutKataTDD.Tests.csproj", "{C0B0795B-6991-48EE-85EF-CC0623ED342F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{275A2175-17BA-4F65-99C5-A7E1BF56FEE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

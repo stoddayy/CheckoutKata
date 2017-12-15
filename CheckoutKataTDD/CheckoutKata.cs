@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-
+using CheckoutKataTDD;
 using System.Collections.Generic;
 
 namespace CheckoutKataTDD {
@@ -15,9 +15,19 @@ namespace CheckoutKataTDD {
         public int CheckoutBasket() {
             int basketPrice = 0;
 
+            List<Item> matchedItems = new List<Item>();
 
             foreach (Item item in basketList) {
-                basketPrice += item.price;
+
+                if (item.rules == null) {
+                    basketPrice += item.price;
+                } else {
+                    if (!matchedItems.Contains(item)) {
+                        matchedItems.Add(item);
+                        basketPrice += CalculateAllSameItems(basketList, item);
+                    }
+                }
+
             }
 
             return basketPrice;
@@ -33,5 +43,28 @@ namespace CheckoutKataTDD {
             }
             basketList.RemoveAt(item);
         }
+
+
+        private int CalculateAllSameItems(List<Item> items, Item matchedItem){
+            int price = 0;
+
+            List<Item> itemsOfSameType = new List<Item>();
+
+            for (int i = 0; i < items.Count(); i++) {
+                if(items.ElementAt(i).id == matchedItem.id){
+                    itemsOfSameType.Add(items.ElementAt(i));
+                }
+            }
+
+
+            if(itemsOfSameType.Count() % matchedItem.rules.quantity == 0){
+                int multiplier = (itemsOfSameType.Count() / matchedItem.rules.quantity);
+                price = matchedItem.rules.price * multiplier;
+            } 
+
+            return price;
+        }
+
+
     }
 }
