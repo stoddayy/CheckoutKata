@@ -1,0 +1,11 @@
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD/bin/Debug/netcoreapp2.0/CheckoutKataTDD.deps.json
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD/bin/Debug/netcoreapp2.0/CheckoutKataTDD.runtimeconfig.json
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD/bin/Debug/netcoreapp2.0/CheckoutKataTDD.runtimeconfig.dev.json
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD/bin/Debug/netcoreapp2.0/CheckoutKataTDD.dll
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD/bin/Debug/netcoreapp2.0/CheckoutKataTDD.pdb
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD/obj/Debug/netcoreapp2.0/CheckoutKataTDD.csprojResolveAssemblyReference.cache
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD/obj/Debug/netcoreapp2.0/CheckoutKataTDD.csproj.CoreCompileInputs.cache
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD/obj/Debug/netcoreapp2.0/CheckoutKataTDD.AssemblyInfoInputs.cache
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD/obj/Debug/netcoreapp2.0/CheckoutKataTDD.AssemblyInfo.cs
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD/obj/Debug/netcoreapp2.0/CheckoutKataTDD.dll
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD/obj/Debug/netcoreapp2.0/CheckoutKataTDD.pdb

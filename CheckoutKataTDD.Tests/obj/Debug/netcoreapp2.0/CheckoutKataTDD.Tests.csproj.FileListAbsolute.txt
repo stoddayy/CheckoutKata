@@ -1,0 +1,16 @@
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/bin/Debug/netcoreapp2.0/xunit.runner.utility.netstandard15.dll
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netstandard15.dll
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/bin/Debug/netcoreapp2.0/CheckoutKataTDD.Tests.deps.json
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/bin/Debug/netcoreapp2.0/CheckoutKataTDD.Tests.runtimeconfig.json
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/bin/Debug/netcoreapp2.0/CheckoutKataTDD.Tests.runtimeconfig.dev.json
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/bin/Debug/netcoreapp2.0/CheckoutKataTDD.Tests.dll
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/bin/Debug/netcoreapp2.0/CheckoutKataTDD.Tests.pdb
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/obj/Debug/netcoreapp2.0/CheckoutKataTDD.Tests.csprojResolveAssemblyReference.cache
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/obj/Debug/netcoreapp2.0/CheckoutKataTDD.Tests.csproj.CoreCompileInputs.cache
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/obj/Debug/netcoreapp2.0/CheckoutKataTDD.Tests.AssemblyInfoInputs.cache
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/obj/Debug/netcoreapp2.0/CheckoutKataTDD.Tests.AssemblyInfo.cs
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/obj/Debug/netcoreapp2.0/CheckoutKataTDD.Tests.dll
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/obj/Debug/netcoreapp2.0/CheckoutKataTDD.Tests.pdb
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/bin/Debug/netcoreapp2.0/CheckoutKataTDD.dll
+/Users/michaelstoddart/Projects/CheckoutKataTDD/CheckoutKataTDD.Tests/bin/Debug/netcoreapp2.0/CheckoutKataTDD.pdb

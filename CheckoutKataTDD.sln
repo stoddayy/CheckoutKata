@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKataTDD", "CheckoutKataTDD\CheckoutKataTDD.csproj", "{EE174C52-5751-4A21-9801-DC78A6233B05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutKataTDD.Tests", "CheckoutKataTDD.Tests\CheckoutKataTDD.Tests.csproj", "{C0B0795B-6991-48EE-85EF-CC0623ED342F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE174C52-5751-4A21-9801-DC78A6233B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE174C52-5751-4A21-9801-DC78A6233B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE174C52-5751-4A21-9801-DC78A6233B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE174C52-5751-4A21-9801-DC78A6233B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0B0795B-6991-48EE-85EF-CC0623ED342F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0B0795B-6991-48EE-85EF-CC0623ED342F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0B0795B-6991-48EE-85EF-CC0623ED342F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0B0795B-6991-48EE-85EF-CC0623ED342F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
