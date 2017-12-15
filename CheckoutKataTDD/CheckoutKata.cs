@@ -19,6 +19,9 @@ namespace CheckoutKataTDD {
         }
 
         public void RemoveItemFromBasket(int item){
+            if(item > (basketList.Count -1)) {
+                throw new IndexOutOfRangeException();
+            }
             basketList.RemoveAt(item);
         }
 

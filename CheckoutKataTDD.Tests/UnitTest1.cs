@@ -11,9 +11,10 @@ namespace CheckoutKataTDD.Tests {
         //1. Checkout returns a value -> X
         //2. basket stores items
         //3. can remove item from basket
-        //3. basket can calculate price on checkout (Without rules)
-        //4. basket can recognise multiples of the same item
-        //5. basket can calculate price on checkout with pricing rules
+        //4. cant remove item out of bounds
+        //5. basket can calculate price on checkout (Without rules)
+        //6. basket can recognise multiples of the same item
+        //7. basket can calculate price on checkout with pricing rules
 
         public UnitTest1(){
             helper = new CheckoutKata();
@@ -55,6 +56,17 @@ namespace CheckoutKataTDD.Tests {
             Assert.True(helper.basketList.Count == 1);
         }
 
+
+        [Fact]
+        public void CanNotRemoveItemOutOfBounds(){
+            Item item1 = new Item();
+            item1.name = "A";
+
+            helper.AddItemToBasket(item1);
+            helper.AddItemToBasket(item1);
+
+            Exception e = Assert.Throws<IndexOutOfRangeException>(() => { helper.RemoveItemFromBasket(2); });
+        }
 
     }
 }
