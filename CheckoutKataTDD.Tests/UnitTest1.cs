@@ -1,10 +1,19 @@
 using System;
 using Xunit;
 using CheckoutKataTDD;
+using System.Collections.Generic;
 
 namespace CheckoutKataTDD.Tests {
     public class UnitTest1 {
 
+
+  //      Item Unit      Special
+  //   Price     Price
+  //--------------------------
+    //A     50       3 for 130
+    //B     30       2 for 45
+    //C     20
+    //D     15
 
         CheckoutKata helper;
 
@@ -14,7 +23,8 @@ namespace CheckoutKataTDD.Tests {
         //4. cant remove item out of bounds
         //5. basket can calculate price on checkout (Without rules)
         //6. basket can recognise multiples of the same item
-        //7. basket can calculate price on checkout with pricing rules
+        //7. Can calculate basket with rules where all items are the same
+        //8. basket can calculate price on checkout with pricing rules
 
         public UnitTest1(){
             helper = new CheckoutKata();
@@ -66,6 +76,27 @@ namespace CheckoutKataTDD.Tests {
             helper.AddItemToBasket(item1);
 
             Exception e = Assert.Throws<IndexOutOfRangeException>(() => { helper.RemoveItemFromBasket(2); });
+        }
+
+        [Fact]
+        public void CanCalculateBasketPriceWithoutRules(){
+            Item item1 = new Item();
+            item1.name = "A";
+            item1.price = 50;
+
+            Item item2 = new Item();
+            item2.name = "B";
+            item2.price = 30;
+
+            helper.AddItemToBasket(item1);
+            helper.AddItemToBasket(item2);
+
+
+             List<Item> list = helper.basketList;
+            int basketPrice = helper.CheckoutBasket();
+
+            Assert.Equal(80, basketPrice);
+
         }
 
     }

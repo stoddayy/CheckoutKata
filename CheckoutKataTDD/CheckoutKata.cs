@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+
 using System.Collections.Generic;
 
 namespace CheckoutKataTDD {
@@ -10,8 +12,15 @@ namespace CheckoutKataTDD {
             basketList = new List<Item>();
         }
 
-        public Double CheckoutBasket() {
-            return 12.0;
+        public int CheckoutBasket() {
+            int basketPrice = 0;
+
+
+            foreach (Item item in basketList) {
+                basketPrice += item.price;
+            }
+
+            return basketPrice;
         }
 
         public void AddItemToBasket(Item item) {
@@ -23,9 +32,6 @@ namespace CheckoutKataTDD {
                 throw new IndexOutOfRangeException();
             }
             basketList.RemoveAt(item);
-
         }
-
-
     }
 }
